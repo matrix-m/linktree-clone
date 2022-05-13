@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Exo:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hyprlink.css">
+    <title>hyprlinkd</title>
+</head>
+<body>
+    <div id="header">
+        <h3>@superbottomdad</h3>
+    </div>
+    <img class="pfp" src="assets/art.png" alt="profile picture" height="128" width="128">
+    <div class="name">superbottompro-dunce<p>big boy</p></div>
+
+    <div class="links">
+       <a class="linky" href="https://www.google.com">Google</a> 
+       <a class="linky" href="https://www.google.com">Google but twice</a>
+       <a class="linky" href="https://www.youtube.com">Google but youtube</a>
+       <a class="linky" href="https://www.google.com">Google but Google</a>
+       <a class="linky" href="https://www.google.com">Google but Google 1</a>
+       <a class="linky" href="https://www.google.com">Google but Google 2</a>
+       <a class="linky" href="https://www.google.com">Google but Google 3</a>
+       <a class="linky" href="https://www.google.com">Google but Google 4</a>
+       <a class="linky" href="https://www.google.com">Google but Google 5</a>
+    </div>
+    
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos < currentScrollPos) {
+            document.getElementById("header").style.top = "0";
+        } else {
+            document.getElementById("header").style.top = "-65px";
+            }
+        prevScrollpos = currentScrollPos;
+    }
+    </script>
+
+</body>
+</html>
