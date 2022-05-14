@@ -17,7 +17,7 @@ body {
 
 p {
     margin-top: 0;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 #header {
@@ -33,7 +33,7 @@ p {
 }
 
 #header a {
-    font-size: 26px;
+    font-size: 1.625rem;
     display: block;
     color: #f2f2f2;
 }
@@ -48,7 +48,7 @@ p {
 
 .name {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875rem;
     overflow-wrap: break-word;
     display: block;
 }
@@ -63,7 +63,7 @@ p {
     margin-right: auto;
     text-align: center;
     border: 2px solid rgb(234, 234, 255);
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 12px;
     width: 450px;
     border-radius: 25px;
