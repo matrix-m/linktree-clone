@@ -1,3 +1,20 @@
+html::-webkit-scrollbar {
+    width: 12px;
+    background-color: #555555;
+  }
+  
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #2a3c58;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555555;
+  }
+
 body {
     background-image: linear-gradient(#7eaffc, #2a3c58);
     font-family: 'Darker Grotesque', sans-serif;
@@ -16,8 +33,8 @@ body {
 }
 
 p {
-    margin-top: 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    text-align: center;  
 }
 
 #header {
@@ -53,6 +70,7 @@ p {
     display: block;
 }
 
+
 .links {
     padding-bottom: 100px;
 }
@@ -80,3 +98,56 @@ a:hover {
     color: purple;
     background-color: rgb(115, 193, 245);
 }
+
+.share {
+    position: absolute;
+    right: 0;
+    margin-right: 45px;
+}
+
+@media screen and (max-width: 455px) {
+    .share {
+        display: none;
+    }
+    
+}
+
+.button {
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.modal-title {
+    margin-top: .5rem;
+    line-height: 0%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+modal.subtext {
+    font-size: .8rem;
+    text-align: center;
+}
+
+li {
+    padding-top: 1.5rem;
+    margin: 0 auto;
+    display: table;
+}
+
+.modal {
+    color-scheme: dark;
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    right:0;
+    top: 25%;
+    border: 0.125rem solid darkslategrey;
+ }

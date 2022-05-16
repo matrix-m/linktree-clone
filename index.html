@@ -11,9 +11,30 @@
     <title>hyprlinkd</title>
 </head>
 <body>
+
+    <div class="share">
+        <button id="open-modal" style="display:inline-block">
+            <img class="button" src="assets/share1.png" height="36" width="36">
+        </button>
+    </div>
+    
+        <dialog class="modal" id="modal">
+            <h3 class="modal-title">Share</h3>
+            <p class="modal.subtext">@superbottomdad | hyprlinkd</p>
+            <hr class="solid">
+            <li>Add content</li><br>
+            <li>Add content</li><br>
+            <li>Add content</li><br>
+            <li>Add content</li><br>
+            <li>Add content</li><br>
+            <li>Add content</li><br>
+            <hr class="solid">
+        </dialog>
+    
     <div id="header">
         <h3>@superbottomdad</h3>
     </div>
+
     <img class="pfp" src="assets/art.png" alt="profile picture" height="128" width="128">
     <div class="name">superbottompro-dunce<p>big boy</p></div>
 
@@ -40,6 +61,20 @@
             }
         prevScrollpos = currentScrollPos;
     }
+    </script>
+
+    <script>
+        const modal = document.getElementById("modal");
+        const btn = document.getElementById("open-modal");
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        window.onclick = function(event) {
+             if (event.target == modal) {
+                 modal.style.display = "none";
+            }
+        }
     </script>
 
 </body>
